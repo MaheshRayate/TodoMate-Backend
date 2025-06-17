@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# dotenv environment files
+config.env
+.env
+.env.*.local
+
+# Build output (if applicable)
+dist/
+build/
