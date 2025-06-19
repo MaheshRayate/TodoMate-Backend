@@ -17,7 +17,8 @@ const createSendToken = (user, statusCode, res) => {
 
   const cookieOptions = {
     maxAge: 600000, //converting to milliseconds
-    // secure: true,
+    secure: true, // requires HTTPS, which Render supports
+    sameSite: "None", // required for cross-origin cookies
     httpOnly: true,
   };
   if (process.env.NODE_ENV === "production") cookieOptions.secure = true; // cannot be accessed by JS in the browser
