@@ -10,7 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://todo-mate-xi.vercel.app", // your frontend origin
+    origin: "https://todo-mate-mahesh-rayates-projects.vercel.app/", // your frontend origin
     credentials: true, // allow cookies to be sent
   })
 );
